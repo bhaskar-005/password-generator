@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/74836d6fe4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h1>PASSWORD GENERATOR</h1>
+  <div class="card">
+    <div class="top-part">
+      <div class="input-group">
+        <input class="input">
+        <label class="user-label"></label>
+        <button class="copy-button" onclick="copyBtn()"><i class="fa-regular fa-copy"></i></button>
+      </div>
+    </div>
+    <div class="bottom-part">
+      <div class="len-num">
+        <h2>Password Length</h2>
+        <h2 class="len-pass">10</h2>
+      </div>
+      <input type="range" min="1" max="20" value="10" class="range">
+      <div class="chack-box">
+        <label class="checkbox_uppercase">
+          <input type="checkbox" class="checkbox__trigger">
+          <span class="checkbox">Include Uppercase Letters</span>
+        </label>
+        <label class="checkbox_lowercase">
+          <input type="checkbox" class="checkbox__trigger">
+          <span class="checkbox">Include Lowercase Letters</span>
+        </label>
+        <label class="checkbox_number">
+          <input type="checkbox" class="checkbox__trigger">
+          <span class="checkbox">Include Numbers</span>
+        </label>
+        <label class="checkbox_symbol">
+          <input type="checkbox" class="checkbox__trigger">
+          <span class="checkbox">Include Symbols</span>
+        </label>
+      </div>
+      <div class="strength">
+        <h2>Strength</h2>
+        <div class="stn-colour">⚪️</div>
+      </div>
+      <button class="btn-sub" ">Generate</button>
+    </div>
+  </div>
+
+  <div class="copyed" id="copyed"><h4 class="pas-show"></h4></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
